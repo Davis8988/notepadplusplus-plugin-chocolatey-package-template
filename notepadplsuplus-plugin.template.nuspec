@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>notepadplusplus-plugin.template</id>
+    <version>1.0.0</version>
+    <title>NotepadPlusPlus-Plugin Template</title>
+    <authors>David Yair</authors>
+    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
+    <tags>notepadplusplus-plugin.template</tags>
+    <summary>Template package for creating notepadplusplus plugin packages</summary>
+	<description>Template package for creating notepadplusplus plugin packages  
+  
+## Template Properties
+
+- `PLUGIN_NAME` - Optional property for using this template. This plugin name must be the name of the plugin dll as well.  
+   For example if you dll is named: 'BetterMultiSelection.dll' then the plugin name should be: **BetterMultiSelection**.  
+   Default: package-id.
+
+## Usage
+- Example 1:  `choco new bettermultiselection -t notepadplusplus-plugin`  
+- Example 2:  `choco new myplugin -t notepadplusplus-plugin PLUGIN_NAME="DllPluginFileName"`  
+	</description>
+  </metadata>
+  <files>
+    <file src="templates\**" target="templates" />
+  </files>
+</package>

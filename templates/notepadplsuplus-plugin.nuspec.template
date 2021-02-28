@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>notepadplusplus-plugin-[[PackageNameLower]]</id>
+    <version>[[PackageVersion]]</version>
+    <title>Notepad++ Plugin [[PackageName]] (Install)</title>
+    <authors>David Yair</authors>
+    <owners>David Yair</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+Install Notepad++ Plugin [[PackageName]]  
+  
+## Package parameters
+
+- `/nppInstallDir:{Notepad++ installation dir}` - Provide full path to notepad++ existing installation dir. If not provided will search the default locations.
+- `/skipIfAlreadyInstalled` - Instructs the installing script to skip if an any plugin existing-installation is detected.
+- `/removePluginDir` - Uninstall flag to remove the whole plugin dir upon uninstall. Default behavior is to remove the whole dir only when it is empty after uninstalling.
+
+Example 1: `choco install notepadplusplus-plugin-[[PackageNameLower]] --yes --params " /nppInstallDir:""C:\My\Notepad++"" "`  
+Example 2: `choco install notepadplusplus-plugin-[[PackageNameLower]] --yes --params " /nppInstallDir:""C:\My\Notepad++"" /skipIfAlreadyInstalled "`  
+Example 3: `choco uninstall notepadplusplus-plugin-[[PackageNameLower]] --yes --params " /nppInstallDir:""C:\My\Notepad++"" /removePluginDir "`  
+	</description>
+    <summary>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages.</summary>
+    <tags>notepad notepadplusplus-plugin notepad-plus-plus editor text development foss</tags>
+    <dependencies>
+      <dependency id="notepadplusplus.install" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
