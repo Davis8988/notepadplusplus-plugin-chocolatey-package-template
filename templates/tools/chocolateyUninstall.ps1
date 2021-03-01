@@ -1,7 +1,7 @@
 ﻿
 
 $pluginName = "[[PLUGIN_NAME]]"
-if ((! $pluginName) -or ($pluginName.trim() -like "*[PLUGIN_NAME]*") -or ($pluginName.trim() -eq "")) {$pluginName = "bettermultiselection"}
+if ((! $pluginName) -or ($pluginName.trim() -like "*[PLUGIN_NAME]*") -or ($pluginName.trim() -eq "")) {$pluginName = "[[PackageNameLower]]"}
 $pluginDirName = $pluginName
 $notepadPlusPlusSoftwareName   = 'Notepad\+\+*'
 $toolsPath = Split-Path -parent $MyInvocation.MyCommand.Definition
