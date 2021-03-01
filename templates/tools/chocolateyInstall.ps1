@@ -3,7 +3,7 @@
 $pluginName = "[[PLUGIN_NAME]]"
 $pluginPkgName = $env:ChocolateyPackageName
 $pluginPkgVersion = $env:ChocolateyPackageVersion
-if ((! $pluginName) -or ($pluginName.trim() -like "*[PLUGIN_NAME]*") -or ($pluginName.trim() -eq "")) {$pluginName = "bettermultiselection"}
+if ((! $pluginName) -or ($pluginName.trim() -like "*[PLUGIN_NAME]*") -or ($pluginName.trim() -eq "")) {$pluginName = $pluginPkgName}
 $pluginDirName = $pluginName
 $notepadPlusPlusSoftwareName   = 'Notepad\+\+*'
 $toolsPath = Split-Path -parent $MyInvocation.MyCommand.Definition
