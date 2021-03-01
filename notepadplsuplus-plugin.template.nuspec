@@ -6,20 +6,27 @@
     <version>1.0.0</version>
     <title>NotepadPlusPlus-Plugin Template</title>
     <authors>David Yair</authors>
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
+	<owners>David Yair</owners>
+	<copyright>Copyright (c) 2021 David Yair</copyright>
+    <projectUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</projectUrl>
+    <packageSourceUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</packageSourceUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>notepadplusplus-plugin.template</tags>
     <summary>Template package for creating notepadplusplus plugin packages</summary>
 	<description>Template package for creating notepadplusplus plugin packages  
   
 ## Template Properties
 
-- `PLUGIN_NAME` - Optional property for using this template. This plugin name must be the name of the plugin dll as well.  
-   For example if you dll is named: 'BetterMultiSelection.dll' then the plugin name should be: **BetterMultiSelection**.  
+- `PLUGIN_NAME` - Optional property for using this template. Use this property to specify the plugin dll file name when it is different from your plugin name.  
+   For example if my plugin is called: 'SaveAndExec' and my plugin dll file is named: 'exec.dll' then I can pass it with: **PLUGIN_NAME="exec"**  
    Default: package-id.
 
 ## Usage
-- Example 1:  `choco new bettermultiselection -t notepadplusplus-plugin`  
-- Example 2:  `choco new myplugin -t notepadplusplus-plugin PLUGIN_NAME="DllPluginFileName"`  
+1. Create choco package sources using this template. See examples below:
+    - Example 1:  `choco new bettermultiselection -t notepadplusplus-plugin`  
+    - Example 2:  `choco new myplugin -t notepadplusplus-plugin PLUGIN_NAME="DllPluginFileName"`  
+2. Put your plugin dll file into **tools\x32** or **tools\x64** (or both)
+3. Pack the plugin package by with `choco pack` command
 	</description>
   </metadata>
   <files>

@@ -3,7 +3,7 @@
   <metadata>
     <id>notepadplusplus-plugin-[[PackageNameLower]]</id>
     <version>[[PackageVersion]]</version>
-    <title>Notepad++ Plugin [[PackageName]] (Install)</title>
+    <title>Notepad++ Plugin - [[PackageName]] (Install)</title>
     <authors>David Yair</authors>
     <owners>David Yair</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
