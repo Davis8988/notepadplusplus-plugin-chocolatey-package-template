@@ -20,7 +20,7 @@ Example 1: `choco install notepadplusplus-plugin-[[PackageNameLower]] --yes --pa
 Example 2: `choco install notepadplusplus-plugin-[[PackageNameLower]] --yes --params " /nppInstallDir:""C:\My\Notepad++"" /skipIfAlreadyInstalled "`  
 Example 3: `choco uninstall notepadplusplus-plugin-[[PackageNameLower]] --yes --params " /nppInstallDir:""C:\My\Notepad++"" /removePluginDir "`  
 	</description>
-    <summary>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages.</summary>
+    <summary>This package is a plugin installation for 'Notepad++' which is a free source code editor and Notepad replacement that supports several languages.</summary>
     <tags>notepad notepadplusplus-plugin notepad-plus-plus editor text development foss</tags>
     <dependencies>
       <dependency id="notepadplusplus.install" />

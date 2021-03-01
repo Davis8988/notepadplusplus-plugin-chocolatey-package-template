@@ -10,6 +10,7 @@
 	<copyright>Copyright (c) 2021 David Yair</copyright>
     <projectUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</projectUrl>
     <packageSourceUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</packageSourceUrl>
+	<iconUrl>https://raw.githubusercontent.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template/main/Logo.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>notepadplusplus-plugin.template</tags>
     <summary>Template package for creating notepadplusplus plugin packages</summary>
