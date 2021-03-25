@@ -20,7 +20,7 @@ function getNppInstallationDir($nppSoftwareName) {
 		$notepadPlusPlusDefaultInstallLocations | foreach {Write-Host " - $_"}
 		
 		# Check for first path that exists
-		$notepadPlusPlusDefaultInstallLocations | foreach {if (Test-path -Path $_) {$_nppInstallationDir = $_; Write-Host "Found $notepadPlusPlusSoftwareName installation dir: $_nppInstallationDir" -ForegroundColor Yellow; break} }
+		$notepadPlusPlusDefaultInstallLocations | foreach {if (Test-path -Path $_) {$_nppInstallationDir = $_; Write-Host "Found $notepadPlusPlusSoftwareName installation dir: $_nppInstallationDir" -ForegroundColor Yellow; return $_nppInstallationDir} }
 	}
 	
 	return $_nppInstallationDir

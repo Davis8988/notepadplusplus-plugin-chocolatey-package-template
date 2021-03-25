@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>notepadplusplus-plugin.template</id>
-    <version>1.0.0</version>
-    <title>NotepadPlusPlus-Plugin Template</title>
-    <authors>David Yair</authors>
-	<owners>David Yair</owners>
-	<copyright>Copyright (c) 2021 David Yair</copyright>
-    <projectUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</projectUrl>
-    <packageSourceUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</packageSourceUrl>
-	<iconUrl>https://raw.githubusercontent.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template/main/Logo.png</iconUrl>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>notepadplusplus-plugin.template</tags>
-    <summary>Template package for creating notepadplusplus plugin packages</summary>
-	<description>Template package for creating notepadplusplus plugin packages  
-  
+	<metadata>
+		<id>notepadplusplus-plugin.template</id>
+		<version>1.0.3</version>
+		<title>NotepadPlusPlus-Plugin Template</title>
+		<authors>David Yair</authors>
+		<owners>David Yair</owners>
+		<copyright>Copyright (c) 2021 David Yair</copyright>
+		<projectUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</projectUrl>
+		<packageSourceUrl>https://github.com/Davis8988/notepadplusplus-plugin-chocolatey-package-template.git</packageSourceUrl>
+		<iconUrl>https://cdn.jsdelivr.net/gh/Davis8988/notepadplusplus-plugin-chocolatey-package-template/Logo.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<tags>notepadplusplus-plugin.template</tags>
+		<summary>Template package for creating notepadplusplus plugin packages</summary>
+		<description>Template package for creating notepadplusplus plugin packages  
+
 ## Template Properties
 
 - `PLUGIN_NAME` - Optional property for using this template. Use this property to specify the plugin dll file name when it is different from your plugin name.  
-   For example if my plugin is called: 'SaveAndExec' and my plugin dll file is named: 'exec.dll' then I can pass it with: **PLUGIN_NAME="exec"**  
-   Default: package-id.
+For example if my plugin is called: 'SaveAndExec' and my plugin dll file is named: 'exec.dll' then I can pass it with: **PLUGIN_NAME="exec"**  
+Default: package-id.
 
 ## Usage
 1. Create choco package sources using this template. See examples below:
-    - Example 1:  `choco new bettermultiselection -t notepadplusplus-plugin`  
-    - Example 2:  `choco new myplugin -t notepadplusplus-plugin PLUGIN_NAME="DllPluginFileName"`  
+- Example 1:  `choco new bettermultiselection -t notepadplusplus-plugin`  
+- Example 2:  `choco new myplugin -t notepadplusplus-plugin PLUGIN_NAME="DllPluginFileName"`  
 2. Put your plugin dll file into **tools\x32** or **tools\x64** (or both)
 3. Pack the plugin package by with `choco pack` command
-	</description>
-  </metadata>
-  <files>
-    <file src="templates\**" target="templates" />
-  </files>
+		</description>
+	</metadata>
+	<files>
+		<file src="templates\**" target="templates" />
+	</files>
 </package>

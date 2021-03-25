@@ -1,9 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $pluginName = "[[PLUGIN_NAME]]"
+$attribNamePluginName = "[[PLUGIN_NAME" + "]]"
 $pluginPkgName = $env:ChocolateyPackageName
 $pluginPkgVersion = $env:ChocolateyPackageVersion
-if ((! $pluginName) -or ($pluginName.trim() -like "*[PLUGIN_NAME]*") -or ($pluginName.trim() -eq "")) {$pluginName = "[[PackageNameLower]]"}
+if ((! $pluginName) -or ($pluginName.trim() -eq "") -or ($pluginName.trim() -eq $attribNamePluginName)) {Write-Host "Updating plugin-name to: '[[PackageName]]'" -ForegroundColor Cyan; $pluginName = "[[PackageName]]"}
 $pluginDirName = $pluginName
 $notepadPlusPlusSoftwareName   = 'Notepad\+\+*'
 $toolsPath = Split-Path -parent $MyInvocation.MyCommand.Definition

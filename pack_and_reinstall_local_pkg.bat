@@ -2,10 +2,15 @@
 
 set pkgName=notepadplusplus-plugin.template
 
+pushd "%~dp0"
+
 title pack
 cpack
 if %errorlevel% neq 0 echo Error - Failed packing %pkgName% pacakge && pause && exit 1
 
+title uninstall
+cuninst %pkgName% -y
+
 title install
-cinst notepadplusplus-plugin.template -s . -y --force %*
+cinst %pkgName% -s . -y --force %*
 if %errorlevel% neq 0 echo Error - Failed installing %pkgName% pacakge && pause && exit 1
